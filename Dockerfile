@@ -8,5 +8,5 @@ COPY ./psnr /root/psnr
 
 RUN make
 
-CMD /root/psnr/qpsnr -s 0 -m 1000 -r $VIDEO1 $VIDEO2
+CMD /root/psnr/qpsnr -s $START -m $END -r $VIDEO1 $VIDEO2
 
